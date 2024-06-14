@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green-Api</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="/assets/images/logo.png" alt="GREEN API Logo" />
+      <h1>GREEN-API Integration</h1>
+      <div class="data-container">
+        <div class="input-container">
+          <div class="input-group">
+            <input type="text" id="idInstance" placeholder="idInstance" />
+            <input
+              type="text"
+              id="apiTokenInstance"
+              placeholder="apiTokenInstance"
+            />
+          </div>
+          <div class="button-group">
+            <button onclick="getSettings()">getSettings</button>
+            <button onclick="getStateInstance()">getStateInstance</button>
+          </div>
+          <div class="input-group">
+            <input type="text" id="chatId" placeholder="77771234567" />
+            <textarea
+              type="text"
+              id="message"
+              placeholder="Hello World!"
+            ></textarea>
+          </div>
+          <div class="button-group">
+            <button onclick="sendMessage()">sendMessage</button>
+          </div>
+          <div class="input-group">
+            <input type="text" id="chatId" placeholder="77771234567" />
+            <input
+              type="text"
+              id="urlFile"
+              placeholder="https://upload.wikimedia.org/wikipedia/commons/d/de/Nokota_Horses_cropped.jpg"
+            />
+          </div>
+          <div class="button-group">
+            <button onclick="sendFileByUrl()">sendFileByUrl</button>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="response">Ответ</label>
+          <textarea id="response" readonly></textarea>
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>
