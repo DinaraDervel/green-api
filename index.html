@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Green-Api</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="/assets/images/logo.png" type="image/png" />
   </head>
   <body>
     <div class="container">
@@ -13,11 +14,15 @@
       <div class="data-container">
         <div class="input-container">
           <div class="input-group">
-            <input type="text" id="idInstance" placeholder="idInstance" />
+            <input
+              type="text"
+              id="idInstance"
+              placeholder="Введите idInstance"
+            />
             <input
               type="text"
               id="apiTokenInstance"
-              placeholder="apiTokenInstance"
+              placeholder="Введите apiTokenInstance"
             />
           </div>
           <div class="button-group">
@@ -25,22 +30,30 @@
             <button onclick="getStateInstance()">getStateInstance</button>
           </div>
           <div class="input-group">
-            <input type="text" id="chatId" placeholder="77771234567" />
+            <input
+              type="text"
+              id="chatId"
+              placeholder="Введите chatId в формате 00000000000@c.us"
+            />
             <textarea
               type="text"
               id="message"
-              placeholder="Hello World!"
+              placeholder="Введите текст сообщения"
             ></textarea>
           </div>
           <div class="button-group">
             <button onclick="sendMessage()">sendMessage</button>
           </div>
           <div class="input-group">
-            <input type="text" id="chatId" placeholder="77771234567" />
+            <input
+              type="text"
+              id="chatId"
+              placeholder="Введите chatId в формате 00000000000@c.us"
+            />
             <input
               type="text"
               id="urlFile"
-              placeholder="https://upload.wikimedia.org/wikipedia/commons/d/de/Nokota_Horses_cropped.jpg"
+              placeholder="Введите url адрес файла"
             />
           </div>
           <div class="button-group">
@@ -50,7 +63,7 @@
 
         <div class="input-group">
           <label for="response">Ответ</label>
-          <textarea id="response" readonly></textarea>
+          <textarea class="response" id="response" readonly></textarea>
         </div>
       </div>
     </div>
